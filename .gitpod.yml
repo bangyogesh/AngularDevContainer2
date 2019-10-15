@@ -1,11 +1,13 @@
 image:
   file: dockerfile  
 tasks:
-  - init: echo 'welcome to angular dev container'
+  - init: ng new hello-world --interactive=false && cd hello-world && ng serve -o --port 4400    
 ports:
   - port: 8000
     onOpen: open-preview    
   - port: 4200
     onOpen: open-preview
   - port: 8080
+    onOpen: open-preview
+  - port: 4400
     onOpen: open-preview
