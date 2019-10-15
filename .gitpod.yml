@@ -1,0 +1,11 @@
+image:
+  file: dockerfile  
+tasks:
+  - init: echo 'welcome to angular dev container'
+ports:
+  - port: 8000
+    onOpen: open-preview    
+  - port: 4200
+    onOpen: open-preview
+  - port: 8080
+    onOpen: open-preview
