@@ -3,10 +3,7 @@ image:
 workspaceLocation: "."
 tasks:
   - init:  echo 'Welcome to Angular dev environment'
-  - command: >
-      ng new hello-world --interactive=false 
-      cd hello-world 
-      ng serve -o --port 4400      
+    command: ng new hello-world --interactive=false && cd hello-world && ng serve -o --port 4400      
 ports:
   - port: 8000
     onOpen: open-preview    
