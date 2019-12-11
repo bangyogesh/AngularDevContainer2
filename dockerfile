@@ -1,5 +1,6 @@
-FROM openjdk:8
+#FROM openjdk:8
 
+FROM ubuntu
 USER root
 
 # Avoid warnings by switching to noninteractive
