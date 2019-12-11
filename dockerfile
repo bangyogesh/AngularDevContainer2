@@ -15,6 +15,9 @@ RUN apt-get install apt-transport-https
 # get gcc
 RUN apt-get update &&apt-get install build-essential -y
 
+#curl install
+RUN apt-get -y install curl
+
 # Install Node.js v10-stable
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
     && apt-get install -y nodejs
